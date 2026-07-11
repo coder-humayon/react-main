@@ -2,3 +2,10 @@
 .container{
     @apply max-w-[998px] mx-auto
 }
+@theme{
+    --font-sans:"Asta Sans", sans-serif;
+}
+.menue ul li a:hover{
+    color: rgb(0, 238, 255);
+    transition: all ease-in-out 0.6s;
+}
