@@ -33,10 +33,6 @@ const Header = () => {
               {menuItems.map((item, index) => (
                 // এখানে স্মুথ হোভার আন্ডারলাইন এবং অপাসিটি ফিক্স করা হয়েছে
                 <li key={index} className="transition-all duration-200 hover:opacity-100 hover:underline underline-offset-4 hover:text-cyan-300">
-                // এখানে স্মুথ হোভার আন্ডারলাইন এবং অপাসিটি ফিক্স করা হয়েছে
-                <li key={index} className="transition-all duration-200 hover:opacity-100 hover:underline underline-offset-4 hover:text-cyan-300">
-                // এখানে স্মুথ হোভার আন্ডারলাইন এবং অপাসিটি ফিক্স করা হয়েছে
-                <li key={index} className="transition-all duration-200 hover:opacity-100 hover:underline underline-offset-4 hover:text-cyan-300">
                   <a href={`#${item.toLowerCase()}`}>{item}</a>
                 </li>
               ))}
@@ -57,6 +53,9 @@ const Header = () => {
         <ul className='flex flex-col px-10 py-6 gap-6 text-[#f5f5f7] text-[24px] font-semibold font-sans'>
           {menuItems.map((item, index) => (
             // মোবাইল মেনুতে হোভার করলে লেখা উজ্জ্বল হবে এবং সামান্য ডানে সরবে (Premium Feel)
+            <li key={index} onClick={() => setIsOpen(false)} className="border-b border-[#333] pb-2 transition-all duration-200 hover:text-white hover:pl-2">
+              <a href={`#${item.toLowerCase()}`} className="block w-full">{item}</a>
+            </li>
             <li key={index} onClick={() => setIsOpen(false)} className="border-b border-[#333] pb-2 transition-all duration-200 hover:text-white hover:pl-2">
               <a href={`#${item.toLowerCase()}`} className="block w-full">{item}</a>
             </li>
