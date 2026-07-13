@@ -5,7 +5,7 @@ import { IoSearchOutline, IoBagOutline, IoMenuOutline, IoCloseOutline } from "re
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuItems = [
-    "Store", "Mac", "iPad", "iPhone", "Watch", 
+    "Store", "Mac", "iPad", "iPhone", "Watch",
     "AirPods", "TV & Home", "Entertainment", "Accessories", "Support"
   ];
 
@@ -34,8 +34,8 @@ const Header = () => {
             <a href="#" className="hover:opacity-100 transition-opacity"><IoSearchOutline /></a>
             <a href="#" className="hover:opacity-100 transition-opacity"><IoBagOutline /></a>
           </div>
-
         </div>
+
       </div>
       <div className={`md:hidden fixed left-0 w-full bg-[#161617] transition-all duration-300 ease-in-out z-40 overflow-hidden ${isOpen ? 'top-[50px] h-screen opacity-100' : 'top-[-100%] h-0 opacity-0'}`}>
         <ul className='flex flex-col px-10 py-6 gap-6 text-[#f5f5f7] text-[24px] font-semibold font-sans'>
@@ -47,6 +47,7 @@ const Header = () => {
         </ul>
       </div>
     </section>
+    
   );
 };
 
