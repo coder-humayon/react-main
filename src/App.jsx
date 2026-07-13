@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Header from './header/Header'
 import Bannar from './banner/Bannar'
+import Iphone14 from './Iphone14'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     <>
       <Header/>
       <Bannar/>
+      <Iphone14/>
     </>
   )
 }
