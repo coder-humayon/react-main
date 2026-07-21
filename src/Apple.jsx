@@ -117,9 +117,6 @@ const Apple = () => {
           <div className="w-full max-w-[420px] mt-6 px-4">
             <img src={apple6} className="w-full h-auto object-contain object-bottom mx-auto" />
           </div>
-          <div className="w-full max-w-[420px] mt-6 px-4">
-            <img src={apple6} className="w-full h-auto object-contain object-bottom mx-auto" />
-          </div>
         </div>
 
       </div>
