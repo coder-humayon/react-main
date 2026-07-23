@@ -62,7 +62,7 @@ const Apple = () => {
 
         {/* ৪. AirPods Pro Card (Image Background) */}
         <div className="min-h-[500px] sm:min-h-[580px] flex flex-col items-center justify-start pt-12 overflow-hidden text-center rounded-[4px] relative bg-cover bg-center" 
-          style={{ backgroundImage: "url()" }}
+          style={{ backgroundImage: `url(${apple4})` }}
         >
           {/* যদি ইমেজ লোড হতে লেট হয় তাই টেক্সট ফুটিয়ে তোলার জন্য হালকা ওভারলে */}
           <div className="absolute inset-0 bg-black/5 pointer-events-none" />
